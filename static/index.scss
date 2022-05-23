@@ -1,0 +1,101 @@
+/* ---  Farbschema
+#7887AB 5798F9
+#4F628E 297EFC
+#2E4272 0D6EFD
+#162955 015ADE
+#061539 01409D
+*/
+/*
+schönes Gelb: #fed136
+*/
+$font-size-base: 0.75rem;
+$primary: #162955;
+$card-border-color: #061539;
+$card-cap-bg: #4F628E;
+$card-cap-color: #fff;
+
+$inw-header-heigth: 150px;
+$inw-site-width: 80%;
+$padding-section: 60px;
+
+@import "lib/bootstrap/scss/bootstrap";
+
+.navbar-dark .navbar-brand {
+  padding-top: 0.08rem;
+  color: $primary;
+}
+
+.nav {
+  width: $inw-site-width;
+}
+
+.nav-link {
+  font-size: 1.0rem;
+}
+
+.navigation {
+  list-style-type: none;
+}
+
+.navigation-item {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body {
+  color: #000000;  
+  background-color: #4F628E;
+  background: linear-gradient(to bottom right, #7887AB, #162955);
+  background-repeat: no-repeat; 
+  height: 100vh;
+  }
+
+.container {
+  position: relative;
+  /* mit margin: auto zentrieren wir ein Block Element horizontal */
+  margin: auto;   
+  width: $inw-site-width;
+}
+
+.inw-header {
+  background-color: transparent;
+  /* padding-bottom: 50px; */
+  margin: auto;
+
+  background-image: url("images/space-2638126_640.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  height: $inw-header-heigth;
+  width: $inw-site-width;
+  border-radius: 8px;
+
+  @include media-breakpoint-up(sm) {
+    height: $inw-header-heigth + 20px;
+  }
+  @include media-breakpoint-up(md) {
+    height: $inw-header-heigth + 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: $inw-header-heigth + 60px;
+  }
+  @include media-breakpoint-up(xl) {
+    height: $inw-header-heigth + 80px;
+  }
+  @include media-breakpoint-up(xxl) {
+    height: $inw-header-heigth + 100px;
+  }
+
+  /* font-size: xx-large; */
+  /* height: 195px; */
+  /* padding-top: 50px; */
+}
+
+.inwhome, .inwcbcopy, .inwastro, .inwwette, .inwpowershell {
+  padding-top: $padding-section;
+  padding-bottom: $padding-section;
+}
+
+.card {
+  border: 2px solid #061539;
+}

@@ -1,0 +1,49 @@
+{% extends "layouts/layout.html" %}
+
+{% block content %}
+    <section class="inwpowershell fs-5">
+      <div class="container">
+        <h2 class="text-center">Windows-Powershell</h2>
+        <p class="text-center text-muted">Wissenwertes über die Windows-Powershell</p>
+        <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 g-4 mt-3"> -->
+        <div class="row">  
+          <div class="col-12 col-md-3">
+            <div class="card h-100">
+              <div class="card-header">links</div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <nav class="nav flex-column">
+                    <a class="nav-link" href="https://docs.microsoft.com/de-de/powershell/" target=”_blank”>Microsoft Powershell</a>
+                  </nav>
+                </h5>
+              </div>
+              <div class="card-footer">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="card h-100">
+              <div class="card-header">Tastenkombinationen und Befehle</div>
+              <div class="card-body">
+              <p>
+                Aufruf der Powershell mit den Tasten: <i class="fa-brands fa-windows"></i>+x+i
+                <br>Aufruf der Powershell als Administrator mit den Tasten: <i class="fa-brands fa-windows"></i>+x+a
+                <br>get-host <i class="fa-solid fa-arrow-right-long"></i> zeigt die aktuelle Version und einige Informationen an
+                <br>Get-ExecutionPolicy <i class="fa-solid fa-arrow-right-long"></i> 
+                <br>Set-ExecutionPolicy Unrestricted oder RemoteSigned
+                <br>&nbsp;
+                <br>&nbsp;
+                <br>&nbsp;
+                <br>&nbsp;
+              </p>
+              </div>
+              <div class="card-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

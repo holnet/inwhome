@@ -1,0 +1,77 @@
+{% extends "layouts/layout.html" %}
+
+{% block content %}
+    <section class="inwcbcopy fs-5">
+      <div class="container">
+        <h2 class="text-center">Zwischenablage</h2>
+        <p class="text-center text-muted">Hier findet man häufig zu gebrauchende Befehle für die Serverwartung zum Kopieren in die Zwischenablage</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5 g-4 mt-3">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header" id="cb0001">sudo apt update</div>
+              <div class="card-body">
+                <h5 class="card-title">Ubuntu (20.04)</h5>
+                <p class="card-text">System aktualisieren: Sind Updates vorhanden ?</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="in die Zwischenablage kopieren" onclick="copyToClipboard('#cb0001')">Copy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header" id="cb0002">sudo apt upgrade</div>
+              <div class="card-body">
+                <h5 class="card-title">Ubuntu (20.04)</h5>
+                <p class="card-text">System aktualisieren: Vorliegende Updates installieren !</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="in die Zwischenablage kopieren" onclick="copyToClipboard('#cb0002')">Copy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header" id="cb0003">sudo systemctl restart apache2</div>
+              <div class="card-body">
+                <h5 class="card-title">Apache</h5>
+                <p class="card-text">Apache restarten</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="in die Zwischenablage kopieren" onclick="copyToClipboard('#cb0003')">Copy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card h-100">
+                <div class="card-header" id="cb0004">sudo ufw status numbered</div>
+                <div class="card-body">
+                  <h5 class="card-title">Firewall</h5>
+                  <p class="card-text">ufw-Status mit Nummern (zum löschen der Regel, extra Befehl) anzeigen</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  title="in die Zwischenablage kopieren" onclick="copyToClipboard('#cb0004')">Copy</a>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-header" id="cb0004">scp -r holger@internethwelt.eu:/var/www/html/mediawiki mediawiki</div>
+              <div class="card-body">
+                <h5 class="card-title">SSH kopieren</h5>
+                <p class="card-text">per ssh-Terminal vom entfernten Rechner in das lokale aktive Verzeichnis kopieren</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="in die Zwischenablage kopieren" onclick="copyToClipboard('#cb0004')">Copy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

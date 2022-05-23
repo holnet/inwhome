@@ -1,0 +1,28 @@
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore Logs
+logs
+*.log
+
+# Ignore the build directory
+/dist
+/__pycache__
+
+# The file containing environment variables 
+.venv
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.sw*
+
+# Ignore special
+.DS_STORE
+#
+# Bootstrap- und SASS-Dateien
+/static/lib/boot*
+/static/index.css
+/static/index.css.map
+#VsCode-Projektdatei
+#inwhome.code-workspace

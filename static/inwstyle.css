@@ -1,0 +1,99 @@
+/* ---  Farbschema
+#7887AB 5798F9
+#4F628E 297EFC
+#2E4272 0D6EFD
+#162955 015ADE
+#061539 01409D
+*/
+/*
+schönes Gelb: #fed136
+*/
+
+.inw-header {
+  margin: auto;
+  /* background-color: rgb(50,50,50); */
+  background-image: url("images/space-2638126_640.jpg");
+  background-size: cover ;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  height: 195px;
+  width: 98%;
+}
+
+.btn-clipboard {
+  position: absolute;
+  top: .65rem;
+  right: .65rem;
+  z-index: 10;
+  display: block;
+  padding: .25rem .5rem;
+  font-size: .65em;
+  color: #0d6efd;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: .25rem;
+}
+
+body {
+color: #000000;  
+background-color: #7887AB;
+background: linear-gradient(to bottom right, #7887AB, #061539);
+height: 100vh;
+}
+
+.container {
+  position: relative;
+  /* mit margin: auto zentrieren wir ein Block Element horizontal */
+  margin: auto;    
+  width: 80%;
+}
+
+.inwsite{
+  box-shadow: 0px 0px 5px #000000;
+  background-color: #ffffff;
+  border: 10px solid #7887AB;
+  border-radius: 8px;
+  padding: 10px;
+  height: 90vh;
+}
+
+.butcopyCB {
+  display: inline-block;
+  margin: 0px 5px;
+  background-color: #4F628E;
+  border: 2px solid #061539;
+  border-radius: 4px;
+  width: 100px;
+  height: 27px;
+  padding: 0px 6px;
+}
+
+.butcopyCB:hover {
+  color: #000000;
+  background-color: #2E4272;
+}
+
+/*.butcopyCB:enabled {
+  background-color: #FFFFFF;
+}
+*/
+.inwlabel {
+  display: block;
+  font-size: 10px;
+  margin: 4px 5px 0px 5px;
+  background-color: #7887AB;
+  border: 2px solid #061539;
+  border-radius: 4px;
+  width: 600px;
+  height: 16px;
+}
+
+.code1 {
+  display: inline-block;
+  margin: 0px 5px;
+  background-color: #4F628E;
+  border: 2px solid #061539;
+  border-radius: 4px;
+  width: 600px;
+  height: 27px;
+}
